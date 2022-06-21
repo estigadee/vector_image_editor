@@ -1,0 +1,2 @@
+#include "VectorImage.hpp"
+
