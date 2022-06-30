@@ -1,0 +1,18 @@
+  CXX = gcc
+
+  CXXFLAGS  = -g -Wall
+ 
+  TARGET = VectorFigure VectorElement VectorImage
+
+  VectorFigure: VectorFigure.hpp VectorFigure.cpp
+
+  VectorElement: VectorElement.hpp VectorElement.cpp
+
+  VectorImage: VectorImage.hpp VectorImage.cpp
+ 
+  all: $(TARGET)
+ 
+  $(TARGET): $(TARGET).c
+              $(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+ 
+  clean:
